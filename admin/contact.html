@@ -1,0 +1,25 @@
+<div style="margin-bottom: 2%;padding: 3%;" ng-repeat="x in data">
+    <div class="card">
+        <div class="card-header">
+            Enquiry
+        </div>
+        <div class="card-body">
+
+            <div class="row">
+                <div class="col-md-3">
+                    <h5 class="card-text">{{x.name}}</h5>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="card-text">{{x.email}}</h5>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="card-text">{{x.phone}}</h5>
+                </div>
+            </div>
+            <br>
+            <h3>Message-></h3>
+            <h4 class="card-text">{{x.message}}</h4>
+            <button ng-click="delete(x.id)" class="btn btn-primary">Delete</button>
+        </div>
+    </div>
+</div>
